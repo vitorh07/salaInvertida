@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="https://cdn.icon-icons.com/icons2/195/PNG/256/Java_23404.png" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/560712aa0e.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <title>Interface Java</title>
+</head>
+<body>
+    <!--CABECALHO/MENU-->
+    <header>
+        <div class="container">
+            <div class="flex">
+                <nav>
+                    <ul class="menu-main">
+                        <li class="menu-main-li"><a href="#interface-o-que-e">O que é Interface?</a></li>
+                        <li class="menu-main-li"><a href="#interfaces-principais">Objeto Java</a></li>
+                            <li class="li-dropdown"><a href="../index.html"><i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i></a>
+                        <ul class="dropdown"> 
+                            <li class="dropdown-li"><a href="./definicao.html">Definição</a></li>
+                            <li class="dropdown-li"><a href="./pilares.html">Pilares</a></li>
+                            <li class="dropdown-li"><a href="./objeto.html">Objeto</a></li>
+                            <li class="dropdown-li"><a href="./classe.html">Classe</a></li>
+                            <li class="dropdown-li"><a href="./atributos.html">Atributos</a></li>
+                            <li class="dropdown-li"><a href="./metodos.html">Métodos</a></li>
+                            <li class="dropdown-li"><a href="./pacotes.html">Pacotes</a></li>
+                            <li class="dropdown-li"><a href="./enumeracoes.html">Enumerações</a></li>
+                            <li class="dropdown-li"><a href="./serializacao.html">Serialização</a></li>
+                            <li class="dropdown-li"><a href="./relacionamento.html">Relacionamento</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="painel-main">
+        <h1>Interfaces Em Java</h1>
+
+    </section>
+
+    <div class="conteudo-box">
+        <section id="interface-o-que-sao" class="java-conteudo">
+            <h2>O que são interface em Java?</h2>
+            <p>A interface é um recurso utilizado em Java para “obrigar” a um determinado grupo de classes a ter métodos ou propriedades em comum para existir em um determinado contexto, contudo os métodos podem ser implementados em cada classe de uma maneira diferente. Pode-se dizer, a grosso modo, que uma interface é um contrato que quando assumido por uma classe deve ser implementado.<br>
+            No rigor do termo, uma interface em Java nada mais é que uma classe abstrata composta somente por métodos abstratos. E como tal, obviamente não pode ser instanciada.<br>
+            Ou seja, ela só contém as declarações dos métodos e constantes, nenhuma implementação, só o 'molde'.
+         <img src="../img/matriz_interface.png">     
+        </p>
+        </section>
+
+        <section id="interfaces-principais" class="java-conteudo">
+            <h2>Utilizando interface em Java</h2>
+            <p>Dentro das interfaces existem somente assinaturas de métodos e propriedades, cabendo à classe que a utilizará realizar a implementação das assinaturas, dando comportamentos práticos aos métodos.<br>
+            Abaixo é possível ver um exemplo de uma interface chamada Figura Geométrica com três assinaturas de métodos que virão a ser implementados pelas classes referentes às figuras geométricas.<br>
+            Para realizar a chamada/referência a uma interface por uma determinada classe, é necessário adicionar a palavra-chave implements ao final da assinatura da classe que irá implementar a interface escolhida.<br>
+            <img src="../img/utilizandointerface1"> </p>
+       
+            <h2>Sintaxe</h2>
+            <p>public class nome_classe implements nome_interface</p><br>
+            <p>Abaixo é possível ver duas classes que implementam a interface FiguraGeometrica, chamada Quadrado e Triângulo:</p>
+            <h2>Onde:</h2>
+            <p> •	nome_classe – Nome da classe a ser implementada.</p><br>
+            <p> •	nome_Interface – Nome da interface a se implementada pela classe<p>
+        </section>
+           <img src="../img/utilizandointerface2.png"><br>
+           <img src="../img/utilizandointerface3.png"><br>
+           <img src="../img/utilizandointerface4.png">
+       
+     <section id="interfaces-herança" class="java-conteudo">
+    <h2>Herança</h2>
+    <p>A herança limita uma classe a herdar somente uma classe pai por vez, é possível que uma classe implemente várias interfaces ao mesmo tempo.</p>
+    <img src="../img/herança1.png"><br>
+    <img src="../img/herança2.png"></br>
+    <img src="../img/herança3.png">
+  
+</div> 
+</body>
+</html>

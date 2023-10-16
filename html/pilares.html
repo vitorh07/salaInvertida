@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="https://cdn.icon-icons.com/icons2/195/PNG/256/Java_23404.png" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/560712aa0e.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <title>Pilares de OO</title>
+</head>
+<body>
+    <!--CABECALHO/MENU-->
+    <header>
+        <div class="container">
+            <div class="flex">
+                <nav>
+                    <ul class="menu-main">
+                        <li class="menu-main-li"><a href="#pilares-de-oo">Pilares de OO</a></li>
+                        <li class="menu-main-li"><a href="#encapsulamento">Encapsulamento</a></li>
+                        <li class="menu-main-li"><a href="#heranca">Herança</a></li>
+                        <li class="menu-main-li"><a href="#abstracao">Abstração</a></li>
+                            <li class="li-dropdown"><a href="../index.html"><i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i></a>
+                        <ul class="dropdown"> 
+                            <li class="dropdown-li"><a href="./definicao.html">Definição</a></li>
+                            <li class="dropdown-li"><a href="./objeto.html">Objeto</a></li>
+                            <li class="dropdown-li"><a href="./classe.html">Classe</a></li>
+                            <li class="dropdown-li"><a href="./atributos.html">Atributos</a></li>
+                            <li class="dropdown-li"><a href="./metodos.html">Métodos</a></li>
+                            <li class="dropdown-li"><a href="./pacotes.html">Pacotes</a></li>
+                            <li class="dropdown-li"><a href="./interface.html">Interface</a></li>
+                            <li class="dropdown-li"><a href="./enumeracoes.html">Enumerações</a></li>
+                            <li class="dropdown-li"><a href="./serializacao.html">Serialização</a></li>
+                            <li class="dropdown-li"><a href="./relacionamento.html">Relacionamento</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="painel-main">
+        <h1>Pilares da Orientação a Objeto</h1>
+    </section>
+
+    <!--PILARES-->
+    <div class="conteudo-box">
+        <section id="pilares-de-oo" class="java-conteudo">
+            <h2>Os Pilares da Orientação a Objeto</h2>
+            <p>Em linguagens orientadas a objeto, nós organizamos a maior parte do nosso código em estruturas chamadas classes. Você pode entender uma classe como sendo inicialmente um molde, molde este que geralmente representa alguma estrutura do mundo real com a qual nosso código terá que lidar.<br><br>
+
+            Quando falamos do que um elemento é, estamos falando de suas características, ou seja: falamos do que caracteriza e define um determinado elemento. Já quando falamos do que o elemento pode fazer, estamos falando das ações que pode desempenhar.<br><br>
+
+            Nós podemos chamar as características de atributos, enquanto nós chamamos as ações de métodos. No final, os métodos e atributos ficam agrupados em uma classe.
+            </p>
+            <center><iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=monokai&wt=bw&l=auto&width=903&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=15.5px&lh=172%25&si=false&es=2x&wm=false&code=%252F%252Fobjeto%2520controle%2520remoto%250Apublic%2520class%2520Controle%2520%257B%250A%2520%2520%250A%2520%2520%252F%252Fatributos%250A%2520%2520public%2520String%2520cor%253B%250A%2520%2520public%2520String%2520formato%253B%250A%2520%2520%250A%2520%2520%252F%252Fm%25C3%25A9todos%250A%2520%2520public%2520void%2520netflix%28%29%2520%257B%250A%2520%2520%2520%2520System.out.println%28%2522Fa%25C3%25A7a%2520login%2520na%2520netflix%21%2522%29%250A%2520%2520%257D%250A%2520%2520public%2520void%2520youtube%28%29%2520%257B%250A%2520%2520%2520%2520System.out.println%28%2522Fa%25C3%25A7a%2520login%2520com%2520sua%2520conta%2520youtube%2522%29%250A%2520%2520%257D%250A%257D"style="width: 903px; height: 447px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin"></iframe></center>
+        </section>
+    </div>
+   
+    <!--ENCAPSULAMENTO-->
+    <div class="conteudo-box">
+        <section id="encapsulamento" class="java-conteudo">
+            <h2>Encapsulamento</h2>
+            <p>O encapsulamento visa esconder atributos e métodos de nossas classes que não deveriam ser acessados por outras estruturas. O encapsulamento nas linguagens orientadas a objetos é definido através de algo que chamamos de atributo de visibilidade. Estes atributos de visibilidade estabelecem justamente o quão acessível nossos atributos e métodos são com relação às demais estruturas do código. De maneira geral, temos três atributos de visibilidade básicos e comuns às linguagens orientadas a objeto em geral:<br><br>
+
+            public: a estrutura é visível a partir de qualquer lugar no código, inclusive em outras classes fora a classe que define o atributo ou método em si;<br><br>
+
+            private: a estrutura é visível somente pela classe que define a estrutura em si. Estruturas externas, como outras classes, não conseguem acessar o método ou atributo que esteja marcado com este atributo de visibilidade;<br><br>
+            
+            protected: a estrutura é visível somente na classe-mãe e nas classes-filhas.</p>
+        </section>
+        <center><iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=monokai&wt=bw&l=auto&width=903&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=15.5px&lh=172%25&si=false&es=2x&wm=false&code=public%2520class%2520Carro%2520%257B%250A%250A%2520%2520%2520%2520public%2520String%2520modelo%253B%250A%2520%2520%2520%2520public%2520String%2520marca%253B%250A%2520%2520%2520%2520%252F%252F%2520Encapsulamento%250A%2520%2520%2520%2520private%2520boolean%2520ligado%253B%2509%250A%2509%250A%2509public%2520Carro%28%29%2520%257B%250A%2509%2509ligado%2520%253D%2520false%253B%250A%2509%257D%250A%250A%2520%2520%2520%2520public%2520void%2520ligar%28%29%2520%257B%250A%2509%2509ligado%2520%253D%2520true%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520System.out.println%28%2522O%2520ve%25C3%25ADculo%2520ligou%21%2522%29%253B%250A%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520public%2520void%2520desligar%28%29%2520%257B%250A%2509%2509ligado%2520%253D%2520false%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520System.out.println%28%2522O%2520ve%25C3%25ADculo%2520desligou%21%2522%29%253B%250A%2520%2520%2520%2520%257D%250A%2509%250A%2509public%2520void%2520acelerar%28%29%2520%257B%250A%2509%2509if%2520%28%21ligado%29%257B%250A%2509%2509%2509throw%2520new%2520Exception%28%2522O%2520carro%2520n%25C3%25A3o%2520pode%2520ser%2520acelerado%252C%2520pois%2520ele%2520est%25C3%25A1%2520desligado.%2522%29%253B%2520%252F%252F%2520Erro%253A%2520o%2520carro%2520est%25C3%25A1%2520desligado%21%250A%2509%2509%257D%250A%2509%2509System.out.println%28%2522O%2520carro%2520foi%2520acelerado%2522%29%253B%250A%2509%257D%250A%257D%250A" style="width: 903px; height: 847px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin"></iframe></center>
+    </div>
+
+    <!--HERANÇA-->
+    <div class="conteudo-box">
+        <section id="heranca" class="java-conteudo">
+            <h2>Herança</h2>
+            <p>O reaproveitamento de código e a possibilidade de se evitar código duplicado são objetivos das linguagens orientadas a objetos. Facilitando a manutenção, além de manter a coerência.<br><br>
+
+            Por exemplo, nós podemos fazer com que Carro herde Veiculo porque um carro é um veículo; assim como também podemos fazer com que Bicicleta herde Veiculo, pois uma bicicleta é um tipo de veículo. Tudo que é comum entre as classes Carro e Bicicleta foi para a classe Veículo. As classes Carro e Bicicleta estão agora herdando a classe Veiculo para reaproveitar estas estruturas comuns.<br><br>
+
+            Quando temos a herança sendo utilizada, as classes podem assumir um dos dois papéis:<br><br>
+
+            Classe-mãe, classe-base ou super-classe: é a classe que serve de base para as demais classes.<br><br>
+
+            Classe-filha ou sub-classe: é a classe que herda outra determinada classe.</p><br>
+
+            <center><iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=monokai&wt=bw&l=auto&width=903&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=15.5px&lh=172%25&si=false&es=2x&wm=false&code=public%2520class%2520Veiculo%2520%257B%250A%250A%2520%2520%2520%2520private%2520String%2520modelo%253B%250A%2520%2520%2520%2520private%2520String%2520marca%253B%250A%2509%250A%2509public%2520void%2520setModelo%28String%2520modelo%29%2520%257B%250A%2509%2509this.modelo%2520%253D%2520modelo%253B%250A%2509%257D%250A%2509%250A%2509public%2520String%2520getModelo%28%29%2520%257B%250A%2509%2509return%2520modelo%253B%250A%2509%257D%250A%2509%250A%2509public%2520void%2520setMarca%28String%2520marca%29%2520%257B%250A%2509%2509this.marca%2520%253D%2520marca%253B%250A%2509%257D%250A%2509%250A%2509public%2520String%2520getMarca%28%29%2520%257B%250A%2509%2509return%2520marca%253B%250A%2509%257D%250A%250A%2509public%2520void%2520acelerar%28%29%2520%257B%250A%2509%2509%252F%252F%2520%253F%253F%253F%250A%2509%257D%250A%2509%250A%257D%250A%250Apublic%2520class%2520Carro%2520extends%2520Veiculo%2520%257B%250A%250A%2520%2520%2520%2520public%2520boolean%2520ligado%253B%2509%250A%250A%2509public%2520Carro%28%29%2520%257B%250A%2509%2509ligado%2520%253D%2520false%253B%250A%2509%257D%250A%250A%2520%2520%2520%2520public%2520void%2520ligar%28%29%2520%257B%250A%2509%2509ligado%2520%253D%2520true%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520System.out.println%28%2522O%2520ve%25C3%25ADculo%2520ligou%21%2522%29%253B%250A%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520public%2520void%2520desligar%28%29%2520%257B%250A%2509%2509ligado%2520%253D%2520false%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520System.out.println%28%2522O%2520ve%25C3%25ADculo%2520desligou%21%2522%29%253B%250A%2520%2520%2520%2520%257D%250A%2509%250A%2509public%2520void%2520acelerar%28%29%2520%257B%250A%2509%2509if%2520%28%21ligado%29%257B%250A%2509%2509%2509throw%2520new%2520Exception%28%2522O%2520carro%2520n%25C3%25A3o%2520pode%2520ser%2520acelerado%252C%2520pois%2520ele%2520est%25C3%25A1%2520desligado.%2522%29%253B%2520%252F%252F%2520Erro%253A%2520o%2520carro%2520est%25C3%25A1%2520desligado%21%250A%2509%2509%257D%250A%2509%2509System.out.println%28%2522O%2520carro%2520foi%2520acelerado%2522%29%253B%250A%2509%257D%250A%2509%250A%2509public%2520boolean%2520estaLigado%28%29%2520%257B%250A%2509%2509return%2520ligado%253B%250A%2509%257D%250A%257D%250A%250Apublic%2520class%2520Bicicleta%2520extends%2520Veiculo%2520%257B%250A%2520%2520%250A%2509public%2520void%2520acelerar%28%29%2520%257B%250A%2509%2509System.out.println%28%2522A%2520bicicleta%2520acelerou%21%2522%29%253B%250A%2509%257D%250A%257D" style="width: 903px; height: 1753px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin"></iframe></center>
+        </section>
+    </div>
+
+    <!--ABSTRAÇÃO-->
+    <div class="conteudo-box">
+        <section id="abstracao" class="java-conteudo">
+            <h2>Abstração</h2>
+            <p>É um tipo de classe especial que não pode ser instanciada, apenas herdada. Sendo assim, uma classe abstrata não pode ter um objeto criado a partir de sua instanciação. Essas classes são muito importantes quando não queremos criar um objeto a partir de uma classe “geral”, apenas de suas “subclasses”.</p><br>
+
+            <center><<iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=monokai&wt=bw&l=auto&width=903&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=15.5px&lh=172%25&si=false&es=2x&wm=false&code=%252F%252F%2520Classe%2520abstrata%2520%28n%25C3%25A3o%2520pode%2520ser%2520instanciada%29%250Apublic%2520abstract%2520class%2520Veiculo%2520%257B%250A%250A%2520%2520%2520%2520private%2520String%2520modelo%253B%250A%2520%2520%2520%2520private%2520String%2520marca%253B%250A%2509%250A%2509public%2520void%2520setModelo%28String%2520modelo%29%2520%257B%250A%2509%2509this.modelo%2520%253D%2520modelo%253B%250A%2509%257D%250A%2509%250A%2509public%2520String%2520getModelo%28%29%2520%257B%250A%2509%2509return%2520modelo%253B%250A%2509%257D%250A%2509%250A%2509public%2520void%2520setMarca%28String%2520marca%29%2520%257B%250A%2509%2509this.marca%2520%253D%2520marca%253B%250A%2509%257D%250A%2509%250A%2509public%2520String%2520getMarca%28%29%2520%257B%250A%2509%2509return%2520marca%253B%250A%2509%257D%250A%250A%2509%252F%252F%2520M%25C3%25A9todo%2520abstrato%253A%2520a%2520classe%2520Veiculo%2520sabe%2520que%2520ela%2520tem%2520que%2520acelerar%252C%2520mas%2520n%25C3%25A3o%2520sabe%2520como%2520fazer%2520isso.%250A%2509%252F%252F%2520A%2520responsabilidade%2520passa%2520a%2520ser%2520das%2520classes-filha%250A%2509public%2520abstract%2520void%2520acelerar%28%29%253B%250A%2509%250A%257D%250A%250Apublic%2520class%2520Carro%2520extends%2520Veiculo%2520%257B%250A%250A%2520%2520%2520%2520public%2520boolean%2520ligado%253B%2509%250A%250A%2509public%2520Carro%28%29%2520%257B%250A%2509%2509ligado%2520%253D%2520false%253B%250A%2509%257D%250A%250A%2520%2520%2520%2520public%2520void%2520ligar%28%29%2520%257B%250A%2509%2509ligado%2520%253D%2520true%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520System.out.println%28%2522O%2520ve%25C3%25ADculo%2520ligou%21%2522%29%253B%250A%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520public%2520void%2520desligar%28%29%2520%257B%250A%2509%2509ligado%2520%253D%2520false%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520System.out.println%28%2522O%2520ve%25C3%25ADculo%2520desligou%21%2522%29%253B%250A%2520%2520%2520%2520%257D%250A%2509%250A%2509%252F%252F%2520Aqui%252C%2520a%2520classe%2520Carro%2520define%2520como%2520ela%2520deve%2520exercer%2520o%2520ato%2520de%2520acelerar%250A%2509%2540Override%250A%2509public%2520void%2520acelerar%28%29%2520%257B%250A%2509%2509if%2520%28%21ligado%29%257B%250A%2509%2509%2509throw%2520new%2520Exception%28%2522O%2520carro%2520n%25C3%25A3o%2520pode%2520ser%2520acelerado%252C%2520pois%2520ele%2520est%25C3%25A1%2520desligado.%2522%29%253B%2520%252F%252F%2520Erro%253A%2520o%2520carro%2520est%25C3%25A1%2520desligado%21%250A%2509%2509%257D%250A%2509%2509System.out.println%28%2522O%2520carro%2520foi%2520acelerado%2522%29%253B%250A%2509%257D%250A%2509%250A%2509public%2520boolean%2520estaLigado%28%29%2520%257B%250A%2509%2509return%2520ligado%253B%250A%2509%257D%250A%257D%250A%250Apublic%2520class%2520Bicicleta%2520extends%2520Veiculo%2520%257B%250A%250A%2509%252F%252F%2520Aqui%252C%2520a%2520classe%2520Bicicleta%2520define%2520como%2520ela%2520deve%2520exercer%2520o%2520ato%2520de%2520acelerar%250A%2509%2540Override%250A%2509public%2520void%2520acelerar%28%29%2520%257B%250A%2509%2509System.out.println%28%2522A%2520bicicleta%2520acelerou%21%2522%29%253B%250A%2509%257D%250A%250A%257D%250A"
+                style="width: 903px; height: 1966px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe></center>
+        </section>
+    </div>
+
+    <!--POLIMORFISMO-->
+    <div class="conteudo-box">
+        <section id="polimorfismo" class="java-conteudo">
+            <h2>Polimorfismo</h2>
+            <p>É um tipo de classe especial que não pode ser instanciada, apenas herdada. Sendo assim, uma classe abstrata não pode ter um objeto criado a partir de sua instanciação. Essas classes são muito importantes quando não queremos criar um objeto a partir de uma classe “geral”, apenas de suas “subclasses”.</p><br>
+
+            <center><<iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=monokai&wt=bw&l=auto&width=903&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=15.5px&lh=172%25&si=false&es=2x&wm=false&code=%252F%252F%2520Classe%2520abstrata%2520%28n%25C3%25A3o%2520pode%2520ser%2520instanciada%29%250Apublic%2520abstract%2520class%2520Veiculo%2520%257B%250A%250A%2520%2520%2520%2520private%2520String%2520modelo%253B%250A%2520%2520%2520%2520private%2520String%2520marca%253B%250A%2509%250A%2509public%2520void%2520setModelo%28String%2520modelo%29%2520%257B%250A%2509%2509this.modelo%2520%253D%2520modelo%253B%250A%2509%257D%250A%2509%250A%2509public%2520String%2520getModelo%28%29%2520%257B%250A%2509%2509return%2520modelo%253B%250A%2509%257D%250A%2509%250A%2509public%2520void%2520setMarca%28String%2520marca%29%2520%257B%250A%2509%2509this.marca%2520%253D%2520marca%253B%250A%2509%257D%250A%2509%250A%2509public%2520String%2520getMarca%28%29%2520%257B%250A%2509%2509return%2520marca%253B%250A%2509%257D%250A%250A%2509%252F%252F%2520M%25C3%25A9todo%2520abstrato%253A%2520a%2520classe%2520Veiculo%2520sabe%2520que%2520ela%2520tem%2520que%2520acelerar%252C%2520mas%2520n%25C3%25A3o%2520sabe%2520como%2520fazer%2520isso.%250A%2509%252F%252F%2520A%2520responsabilidade%2520passa%2520a%2520ser%2520das%2520classes-filha%250A%2509public%2520abstract%2520void%2520acelerar%28%29%253B%250A%2509%250A%257D%250A%250Apublic%2520class%2520Carro%2520extends%2520Veiculo%2520%257B%250A%250A%2520%2520%2520%2520public%2520boolean%2520ligado%253B%2509%250A%250A%2509public%2520Carro%28%29%2520%257B%250A%2509%2509ligado%2520%253D%2520false%253B%250A%2509%257D%250A%250A%2520%2520%2520%2520public%2520void%2520ligar%28%29%2520%257B%250A%2509%2509ligado%2520%253D%2520true%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520System.out.println%28%2522O%2520ve%25C3%25ADculo%2520ligou%21%2522%29%253B%250A%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520public%2520void%2520desligar%28%29%2520%257B%250A%2509%2509ligado%2520%253D%2520false%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520System.out.println%28%2522O%2520ve%25C3%25ADculo%2520desligou%21%2522%29%253B%250A%2520%2520%2520%2520%257D%250A%2509%250A%2509%252F%252F%2520Aqui%252C%2520a%2520classe%2520Carro%2520define%2520como%2520ela%2520deve%2520exercer%2520o%2520ato%2520de%2520acelerar%250A%2509%2540Override%250A%2509public%2520void%2520acelerar%28%29%2520%257B%250A%2509%2509if%2520%28%21ligado%29%257B%250A%2509%2509%2509throw%2520new%2520Exception%28%2522O%2520carro%2520n%25C3%25A3o%2520pode%2520ser%2520acelerado%252C%2520pois%2520ele%2520est%25C3%25A1%2520desligado.%2522%29%253B%2520%252F%252F%2520Erro%253A%2520o%2520carro%2520est%25C3%25A1%2520desligado%21%250A%2509%2509%257D%250A%2509%2509System.out.println%28%2522O%2520carro%2520foi%2520acelerado%2522%29%253B%250A%2509%257D%250A%2509%250A%2509public%2520boolean%2520estaLigado%28%29%2520%257B%250A%2509%2509return%2520ligado%253B%250A%2509%257D%250A%257D%250A%250Apublic%2520class%2520Bicicleta%2520extends%2520Veiculo%2520%257B%250A%250A%2509%252F%252F%2520Aqui%252C%2520a%2520classe%2520Bicicleta%2520define%2520como%2520ela%2520deve%2520exercer%2520o%2520ato%2520de%2520acelerar%250A%2509%2540Override%250A%2509public%2520void%2520acelerar%28%29%2520%257B%250A%2509%2509System.out.println%28%2522A%2520bicicleta%2520acelerou%21%2522%29%253B%250A%2509%257D%250A%250A%257D%250A"
+                style="width: 903px; height: 1966px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe></center>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="https://cdn.icon-icons.com/icons2/195/PNG/256/Java_23404.png" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/560712aa0e.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <title>Serialização Java</title>
+</head>
+<body>
+    <!--CABECALHO/MENU-->
+    <header>
+        <div class="container">
+            <div class="flex">
+                <nav>
+                    <ul class="menu-main">
+                        <li class="menu-main-li"><a href="#serializacao-o-que-e">O que é Serialização?</a></li>
+                            <li class="li-dropdown"><a href="../index.html"><i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i></a>
+                        <ul class="dropdown"> 
+                            <li class="dropdown-li"><a href="./definicao.html">Definição</a></li>
+                            <li class="dropdown-li"><a href="./pilares.html">Pilares</a></li>
+                            <li class="dropdown-li"><a href="./objeto.html">Objeto</a></li>
+                            <li class="dropdown-li"><a href="./classe.html">Classe</a></li>
+                            <li class="dropdown-li"><a href="./atributos.html">Atributos</a></li>
+                            <li class="dropdown-li"><a href="./metodos.html">Métodos</a></li>
+                            <li class="dropdown-li"><a href="./pacotes.html">Pacotes</a></li>
+                            <li class="dropdown-li"><a href="./interface.html">Interface</a></li>
+                            <li class="dropdown-li"><a href="./enumeracoes.html">Enumerações</a></li>
+                            <li class="dropdown-li"><a href="./relacionamento.html">Relacionamento</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="painel-main">
+        <h1>Serialização Em Java</h1>
+
+    </section>
+
+    <div class="conteudo-box">
+        <section id="serializacao-o-que-e
+        " class="java-conteudo">
+            <h2>O que é serialização de objetos em Java?</h2>
+            <p>A serialização é quando um objeto é transformado, em uma cadeia de bytes e desta forma pode ser manipulado de maneira mais fácil, seja através de transporte pela rede ou salvo no disco.
+            A serialização possibilitará capturar o estado do objeto ou a estrutura de dados, e transformar em uma cadeia de bytes quando for necessário.</p>
+            <center><iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=monokai&wt=bw&l=auto&width=903&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=15.5px&lh=172%25&si=false&es=2x&wm=false&code=import%2520java.io.Serializable%253B%250A%250A%2520%2520public%2520class%2520Pessoa%2520implements%2520Serializable%2520%257B%250A%2520%2520%2520%2520private%2520String%2520nome%253B%250A%2520%2520%2520%2520private%2520double%2520pc%253B%2520%2520%2520%252F%252F%2520peso%2520corporal%250A%2520%2520%2520%2520private%2520double%2520alt%253B%2520%2520%252F%252F%2520altura%2520em%2520metros%250A%250A%2520%2520%2520%2520public%2520Pessoa%28String%2520nome%252C%2520double%2520pc%252C%2520double%2520alt%29%2520%257B%250A%2520%2520%2520%2520%2520%2520this.nome%2520%253D%2520nome%253B%250A%2520%2520%2520%2520%2520%2520this.pc%2520%253D%2520pc%253B%250A%2520%2520%2520%2520%2520%2520this.alt%2520%253D%2520alt%253B%250A%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520public%2520String%2520getNome%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520return%2520nome%253B%250A%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520public%2520void%2520setNome%28String%2520nome%29%2520%257B%250A%2520%2520%2520%2520%2520%2520this.nome%2520%253D%2520nome%253B%250A%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520public%2520double%2520getPC%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520return%2520pc%253B%250A%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520public%2520void%2520setPC%28float%2520pc%29%2520%257B%250A%2520%2520%2520%2520%2520%2520this.pc%2520%253D%2520pc%253B%250A%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520public%2520double%2520getAlt%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520return%2520alt%253B%250A%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520public%2520void%2520setAlt%28float%2520alt%29%2520%257B%250A%2520%2520%2520%2520%2520%2520this.alt%2520%253D%2520alt%253B%250A%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520public%2520double%2520IMC%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520return%28getPC%28%29%2520%252F%2520%28getAlt%28%29%2520*%2520getAlt%28%29%29%29%253B%250A%2520%2520%2520%2520%257D%250A%250A%2520%2520%2520%2520public%2520String%2520interpretaIMC%28%29%2520%257B%250A%2520%2520%2520%2520%2520%2520double%2520vlrIMC%2520%253D%2520IMC%28%29%253B%250A%2520%2520%2520%2520%2520%2520if%2520%28vlrIMC%2520%253C%252018.5%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520return%28%2522baixo%2520peso%2522%29%253B%250A%2520%2520%2520%2520%2520%2520else%2520if%2520%28vlrIMC%2520%253C%252025.0%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520return%28%2522peso%2520adequado%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520else%2520if%2520%28vlrIMC%2520%253C%252030.0%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520return%28%2522sobrepeso%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520else%2520return%28%2522obesidade%2522%29%253B%250A%2520%2520%2520%2520%257D%250A%2520%2520%257D"
+  style="width: 903px; height: 1433px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe></center>
+        </section>
+    </div>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+#menu1{position: fixed; top: 0;}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    transition: 0.5s;
+    color: black;
+}
+
+header.rolagem {
+    background-color: #ffffff;
+    padding: 15px 4%;
+    color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.menu-main {
+    list-style-type: none;
+}
+
+.menu-main li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.menu-main li a{
+    color: rgba(55, 55, 55, 0.75);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    position: relative;
+    font-weight: 500;
+}
+
+.menu-main .menu-main-li a:hover {
+    color: black;
+}
+
+.menu-main .menu-main-li a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: cyan;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-main li a:hover::after{
+    width: 80%;
+}
+
+.painel-main {
+    width: 100%;
+    height: 600px;
+    background: url(//www.devmedia.com.br/view/img/grid.png), linear-gradient(to right, rgba(0, 126, 174, .85), rgba(26, 193, 187, .85));
+    z-index: 100;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.painel-main h1 {
+    color: rgb(255, 255, 255);
+    z-index: 998;
+    margin: 0 0 10px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.dropdown {
+    list-style: none;
+    text-align: center;
+}
+
+.dropdown-li a{
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+    
+.dropdown li a {
+    display: block;
+    padding: 20px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 50px;
+}
+.dropdown li a:hover {
+    transform: scale(1.2);
+}
+
+.dropdown li a:hover {
+    color: cyan;
+}
+    
+ul.dropdown li {
+    display: block;
+    margin: 2px 0px;
+}
+    
+ul li ul.dropdown {
+    width:auto;
+    background-color: rgb(48, 56, 64);
+    position: absolute;
+    z-index: 999;
+    display: none;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+.conteudo-box {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.java-conteudo {
+    margin-bottom: 48px;
+}
+
+.java-conteudo h2 {
+    color: #303840;
+    z-index: 998;
+    margin: 0 0 10px;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 24px 0px 16px;
+}
+
+.java-conteudo p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #303840c2;
+}
+
+img {
+    display: flex;
+    object-fit: cover;
+    margin: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: #303840;
+}
+
+/*MODAL*/
+
+.btn {
+    padding: 25px 60px;
+    display: inline;
+    background-color: #303840;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.janela-modal {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.386);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal {
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: rgba(255, 255, 255, 0.656);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.fechar {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.janela-modal.abrir {
+    display: flex;
+}

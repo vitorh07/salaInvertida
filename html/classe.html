@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="https://cdn.icon-icons.com/icons2/195/PNG/256/Java_23404.png" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/560712aa0e.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <title>Classes Java</title>
+</head>
+<body>
+    <!--CABECALHO/MENU-->
+    <header>
+        <div class="container">
+            <div class="flex">
+                <nav>
+                    <ul class="menu-main">
+                        <li class="menu-main-li"><a href="#classes-o-que-sao">O que são Classes?</a></li>
+                        <li class="menu-main-li"><a href="#classes-internas">Classes Internas</a></li>
+                        <li class="menu-main-li"><a href="#classes-abstratas">Classes Abstratas</a></li>
+                        <li class="menu-main-li"><a href="#classes-anonimas">Classes Anônimas</a></li>
+                            <li class="li-dropdown"><a href="../index.html"><i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i></a>
+                        <ul class="dropdown"> 
+                            <li class="dropdown-li"><a href="./definicao.html">Definição</a></li>
+                            <li class="dropdown-li"><a href="./pilares.html">Pilares</a></li>
+                            <li class="dropdown-li"><a href="./objeto.html">Objeto</a></li>
+                            <li class="dropdown-li"><a href="./atributos.html">Atributos</a></li>
+                            <li class="dropdown-li"><a href="./metodos.html">Métodos</a></li>
+                            <li class="dropdown-li"><a href="./pacotes.html">Pacotes</a></li>
+                            <li class="dropdown-li"><a href="./interface.html">Interface</a></li>
+                            <li class="dropdown-li"><a href="./enumeracoes.html">Enumerações</a></li>
+                            <li class="dropdown-li"><a href="./serializacao.html">Serialização</a></li>
+                            <li class="dropdown-li"><a href="./relacionamento.html">Relacionamento</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="painel-main">
+        <h1>Classes Em Java</h1>
+
+    </section>
+
+    <div class="conteudo-box">
+        <section id="classes-o-que-sao" class="java-conteudo">
+            <h2>O que é classe?</h2>
+            <p>Uma classe é um elemento do código Java que utilizamos para representar objetos do mundo real. Dentro dela é comum declararmos atributos e métodos, que representam, respectivamente, as características e comportamentos desse objeto. Neste documento será apresentado como declarar e utilizar uma classe em Java.</p>
+        </section>
+
+        <section id="classes-internas" class="java-conteudo">
+            <h2>Classes Internas</h2>
+            <p>Como o próprio nome diz, são classes que são definidas dentro de outra classe. Sendo que elas têm um relacionamento especial com sua classe externa (classe onde ela está definida), em relação as outras classes. Pelo fato de que elas podem acessar os membros privados da classe externa. É estranho, mais é verdade. Por que na verdade o que acontece, implicitamente a classe interna tem uma instância da classe externa.</p>
+            <center><iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=monokai&wt=bw&l=auto&width=903&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=15.5px&lh=172%25&si=false&es=2x&wm=false&code=public%2520class%2520Pessoa%2520%257B%250A%2520%2520String%2520nome%2520%253D%2520%2522Gabriel%2520Damiani%2520Carvalheiro%2522%253B%250A%2520%2520String%2520sexo%2520%253D%2520%2522Masculino%2522%253B%250A%2520%2520%250A%2520%2520public%2520class%2520Endereco%2520%257B%250A%2520%2520%2520%2520String%2520logradouro%2520%253D%2520%2522Rua%2520Constantino%2520Arantes%2522%253B%250A%2520%2520%2520%2520String%2520numero%2520%253D%2520%252245%2522%253B%250A%2520%2520%257D%250A%257D" style="width: 903px; height: 287px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin"></iframe></center>
+        </section>
+
+        <section id="classes-abstratas" class="java-conteudo">
+            <h2>Classes Abstratas</h2>
+            <p>É um tipo de classe especial que não pode ser instanciada, apenas herdada. Sendo assim, uma classe abstrata não pode ter um objeto criado a partir de sua instanciação. Essas classes são muito importantes quando não queremos criar um objeto a partir de uma classe “geral”, apenas de suas “subclasses”.</p>
+            <center><iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=monokai&wt=bw&l=auto&width=903&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=15.5px&lh=172%25&si=false&es=2x&wm=false&code=public%2520class%2520Programador%2520%253A%2520Funcionario%250A%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520public%2520override%2520void%2520Reajustar%28%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Salario%2520%252B%253D%25201000%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%257D%250A%2520public%2520class%2520Designer%2520%253A%2520Funcionario%250A%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520public%2520override%2520void%2520Reajustar%28%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Salario%2520%252B%253D%2520500%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%257D" style="width: 903px; height: 420px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin"></iframe></center>
+        </section>
+
+        <section id="classes-anonimas" class="java-conteudo">
+            <h2>Classes Anônimas</h2>
+            <p>Classes anônimas te permitem criar um código mais conciso. Elas te permitem declarar e instanciar uma classe ao mesmo tempo. Elas são como classes locais exceto pelo fato de que elas não possuem nome. Recomenda-se que você as utilize caso precise de uma classe local uma única vez.</p>
+            <center><iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=monokai&wt=bw&l=auto&width=903&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=15.5px&lh=172%25&si=false&es=2x&wm=false&code=class%2520Car%2520%257B%250A%2520%2520%2520public%2520void%2520run%28%29%2520%257B%2520...%2520%257D%250A%257D%250A%250Aclass%2520Gol%2520%257B%250A%250ACar%2520car%2520%253D%2520new%2520Car%28%29%2520%257B%250A%2520%2520%2520public%2520void%2520run%28%29%2520%257B%2520...%2520%257D%250A%257D%253B%250A%257D" style="width: 903px; height: 297px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin"></iframe></center>
+            <p>Temos acima a classe Car e a classe Gol. A classe Gol possui em seu corpo a instanciação de um objeto Car, mais ainda, ela além de instanciar um objeto Car muda o comportamento interno da classe, aplicando a herança ao mesmo tempo.</p>
+        </section>
+    </div>
+</body>
+</html>

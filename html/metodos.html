@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="https://cdn.icon-icons.com/icons2/195/PNG/256/Java_23404.png" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/560712aa0e.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <title>Métodos Java</title>
+</head>
+<body>
+    <!--CABECALHO/MENU-->
+    <header>
+        <div class="container">
+            <div class="flex">
+                <nav>
+                    <ul class="menu-main">
+                        <li class="menu-main-li"><a href="#metodos-o-que-sao">O que são Métodos?</a></li>
+                        <li class="menu-main-li"><a href="#metodos-principais">Objeto Java</a></li>
+                            <li class="li-dropdown"><a href="../index.html"><i class="fa-solid fa-bars fa-xl" style="color: #000000;"></i></a>
+                        <ul class="dropdown"> 
+                            <li class="dropdown-li"><a href="./definicao.html">Definição</a></li>
+                            <li class="dropdown-li"><a href="./pilares.html">Pilares</a></li>
+                            <li class="dropdown-li"><a href="./objeto.html">Objeto</a></li>
+                            <li class="dropdown-li"><a href="./classe.html">Classe</a></li>
+                            <li class="dropdown-li"><a href="./atributos.html">Atributos</a></li>
+                            <li class="dropdown-li"><a href="./pacotes.html">Pacotes</a></li>
+                            <li class="dropdown-li"><a href="./interface.html">Interface</a></li>
+                            <li class="dropdown-li"><a href="./enumeracoes.html">Enumerações</a></li>
+                            <li class="dropdown-li"><a href="./serializacao.html">Serialização</a></li>
+                            <li class="dropdown-li"><a href="./relacionamento.html">Relacionamento</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="painel-main">
+        <h1>Métodos Em Java</h1>
+
+    </section>
+
+    <div class="conteudo-box">
+        <section id="metodos-o-que-sao" class="java-conteudo">
+            <h2>O que são métodos em Java?</h2>
+            <p>Quando definimos um objeto num programa orientado a objetos, implementamos todo o comportamento desse objeto em um ou mais métodos. Um método em Java é equivalente a uma função ou procedimento em outras linguagens de programação. Não existe em Java o conceito de métodos globais. Todos os métodos devem sempre ser definidos dentro de uma classe.</p>
+        </section>
+
+        <section id="metodos-principais" class="java-conteudo">
+            <h2>Principais Fundamentos</h2>
+            <p>
+                A sintaxe para construção de um método é a seguinte:<br><br>
+                [modificador] tipo_retorno identificador ([argumentos]) {<br>
+                //Corpo do método<br>
+                }<br><br>
+
+                <strong>Modificadores de Acesso</strong><br>
+                Java controla o acesso a atributos e métodos através do uso dos modificadores de acesso. São eles:
+                public: É o menos restritivo de todos. Atributos e métodos declarados como public em uma classe podem ser acessados pelos métodos da própria classe, por classes derivadas desta e por qualquer outra classe em qualquer outro pacote.
+                protected: Atributos e métodos definidos como protected são acessíveis pelos
+                métodos da própria classe e pelas classes derivadas.
+                <br><br>
+
+                <strong>private:</strong> É o mais restritivo. Atributos e métodos declarados como private só podem ser acessados pelos métodos da própria classe.<br><br>
+
+                Quando nenhum modificador é definido (acesso do tipo “package”), os atributos e métodos podem ser acessados pelos métodos da própria classe, pelas classes derivadas e por qualquer outra classe dentro do mesmo pacote. É importante destacar que esse controle não se aplica às variáveis locais aos métodos.<br><br>
+
+                <strong>Método main</strong><br>
+                Na execução de um programa Java, a JVM (Java Virtual Machine) tenta chamar o método main da classe que foi especificada. Quando declarado o método main como static permite que a JVM invoque o main sem criar uma instância da classe, ou seja, a classe é conhecida como classe principal ou classe testadora, que efetuará os testes e chamadas das classes para a execuções dos programas.
+                A JVM carrega a classe especificada pelo nome da classe que utiliza para invocar o método main (método principal/testador). Sempre que uma classe tiver esse método, é especificado que uma lista de Strings como argumentos de linha de comando, será passada para o aplicativo junto a JVM.<br><br>
+
+                <strong>Métodos static em Java</strong><br>
+                Os métodos static ou métodos da classe são funções que não dependem de nenhuma variável de instância, quando invocados executam uma função sem a dependência do conteúdo de um objeto ou a execução da instância de uma classe, conseguindo chamar direto qualquer método da classe e também manipulando alguns campos da classe.
+                Os métodos static tem um relacionamento com uma classe como um todo, enquanto os métodos que não são static são associados a uma instância de classe específica (objeto) e podem manipular as variáveis de instância do objeto, como pode ser visto nos exemplos de declarações de métodos.
+                </p>
+                <center><iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=monokai&wt=bw&l=auto&width=903&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=true&fl=1&fm=Hack&fs=15.5px&lh=172%25&si=false&es=2x&wm=false&code=public%2520Long%2520getId%28%29%2520%257B%250A%2509%2509return%2520id%253B%250A%2509%257D%250A%250A%2509public%2520void%2520setId%28Long%2520id%29%2520%257B%250A%2509%2509this.id%2520%253D%2520id%253B%250A%2509%257D%250A%250A%2509public%2520String%2520getName%28%29%2520%257B%250A%2509%2509return%2520name%253B%250A%2509%257D%250A%250A%2509public%2520void%2520setName%28String%2520name%29%2520%257B%250A%2509%2509this.name%2520%253D%2520name%253B%250A%2509%257D%250A%250A%2509public%2520String%2520getPlataform%28%29%2520%257B%250A%2509%2509return%2520plataform%253B%250A%2509%257D%250A%250A%2509public%2520void%2520setPlataform%28String%2520plataform%29%2520%257B%250A%2509%2509this.plataform%2520%253D%2520plataform%253B%250A%2509%257D%250A%257D"
+                style="width: 903px; height: 687px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+                </iframe></center>
+        </section>
+    </div>
+
+    
+
+</body>
+</html>
